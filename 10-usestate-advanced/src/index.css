@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #666;
+}
+h1{
+  margin:20px;
+  margin-top: 100px;
+  height: 80px;
+  width: fit-content;
+  background-color: black;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 10px;
+
+}
+button{
+  height: 50px;
+  width: 100px;
+  margin: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: rgb(50, 198, 129);
+}
+#parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
