@@ -15,7 +15,4 @@ const App = () => {
       <button>Submit</button>
       </form>
     </div>
-  )
-}
-
-export default App
+  )}
