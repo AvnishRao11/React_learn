@@ -1,24 +1,28 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react'
+
+
 
 const App = () => {
   const [title, settitle] = useState('');
-
-  const submithandler=(elem)=>{
-    elem.preventDefault();
-    console.log("form submitted by ", title);
+  const onsumbit=(evt)=>{
+    evt.preventDefault();
+    console.log("form submitted");
     settitle('');
   }
   return (
-    <div id='parent'> 
-      <form id="mad" onSubmit={(elem)=>{
-        submithandler(elem);
-      }}>
-      <input  type="text" value={title} placeholder='Enter Your name ' onChange={(event)=>{
-        settitle(event.target.value);
-      }}/>
-      <button>Submit</button>
-      </form>
+    <div>
+      <div id='parent'>
+        <form action="" id='mad'onSubmit={(evt)=>{
+          onsumbit(evt);
+        }} >
+          <input type="text" placeholder='Enter your name ' value={title} onChange={(evt)=>{
+            settitle(evt.target.value);
+          }}/>
+          <button>submit</button>
+        </form>
+      </div>
     </div>
-  )}
+  )
+}
+
 export default App
